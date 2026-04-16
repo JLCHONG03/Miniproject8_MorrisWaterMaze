@@ -1,19 +1,23 @@
-Morris Water Maze: Place–Distance Reinforcement Learning Models
-Overview
+Morris Water Maze Spatial Learning Simulation Models (Place vs Distance Cells) 
+
 This repository contains simulation and analysis code for comparing:
 •	Place-cell reinforcement learning model
 •	Distance-cell model
 •	Combined place–distance models
+
 Models are evaluated under:
 •	Fixed platform condition
 •	Variable platform condition
 ________________________________________
+
 Repository Structure
 modelling/   → simulation scripts (generate CSV outputs)
 analysis/    → analysis & plotting scripts (use CSV outputs)
 plotting_results/   → generated visualizations plot
+
 ________________________________________
-🔹 Step 1: Run modelling scripts (generate data)
+
+Step 1: Run modelling scripts (generate data)
 Run the following scripts in the modelling/ folder to generate CSV files:
 Individual models
 •	place-cell model.R → trajectory and cognitive map (place-cell)
@@ -31,8 +35,10 @@ These scripts will generate:
 •	trial-level summary CSVs (mean ± SE)
 •	run-level CSVs (for mixed-effects models)
 •	optionally .rds files (raw PM arrays)
+
 ________________________________________
-🔹 Step 2: Run analysis scripts (generate figures)
+
+Step 2: Run analysis scripts (generate figures)
 After generating CSV files, run scripts in the analysis/ folder:
 •	comparison_fixed.R
 → plots performance measures for fixed platform (place vs distance)
@@ -48,7 +54,8 @@ These scripts generate:
 •	Mixed-effects model result tables
 •	Figures used in the report
 ________________________________________
-🔹 Workflow Summary
+
+Workflow Summary
 1.	Run modelling scripts → generate CSV outputs
 2.	Run analysis scripts → generate plots and statistical results
 ________________________________________
